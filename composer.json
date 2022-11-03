@@ -1,0 +1,21 @@
+{
+  "name": "caiomarcatti12/core",
+  "description": "",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Caio Marcatti",
+      "email": "caiomarcatti12@gmail.com"
+    }
+  ],
+  "autoload" : {
+    "psr-4" : {
+      "CaioMarcatti12\\Core\\" :  "src/"
+    }
+  },
+  "minimum-stability": "stable",
+  "require": {
+
+  }
+}
