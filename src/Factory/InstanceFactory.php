@@ -1,6 +1,6 @@
 <?php
 
-namespace CaioMarcatti12\Bean;
+namespace CaioMarcatti12\Factory;
 
 use CaioMarcatti12\Bean\Exception\NotConcreteInstanceException;
 use CaioMarcatti12\Bean\Objects\BeanCache;

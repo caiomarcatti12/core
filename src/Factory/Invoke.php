@@ -1,8 +1,8 @@
 <?php
 
-namespace CaioMarcatti12\Router;
+namespace CaioMarcatti12\Factory;
 
-use CaioMarcatti12\Bean\InstanceFactory;
+use CaioMarcatti12\Factory\InstanceFactory;
 use CaioMarcatti12\Bean\Resolver\ClassResolver;
 use CaioMarcatti12\Bean\Resolver\MethodResolver;
 use CaioMarcatti12\Bean\Resolver\ParameterResolver;

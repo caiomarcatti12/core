@@ -2,7 +2,7 @@
 
 namespace CaioMarcatti12\Bean\Resolver;
 
-use CaioMarcatti12\Bean\InstanceFactory;
+use CaioMarcatti12\Factory\InstanceFactory;
 use ReflectionMethod;
 use CaioMarcatti12\Bean\Interfaces\MethodResolverInterface;
 use CaioMarcatti12\Bean\Objects\BeanResolver;
