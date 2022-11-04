@@ -2,13 +2,8 @@
 
 namespace CaioMarcatti12\Core;
 
-use CaioMarcatti12\Cli\CLIServer;
-use CaioMarcatti12\Cli\Interfaces\ArgvParserInterface;
-use CaioMarcatti12\Command\CommandServer;
-use CaioMarcatti12\Compiler\Compiler;
-use CaioMarcatti12\Core\Exception\ApplicationNotFound;
-use CaioMarcatti12\Installer\Installer;
-use CaioMarcatti12\QueueManager\QueueConsumerServer;
+use CaioMarcatti12\Bean\InstanceFactory;
+use CaioMarcatti12\Factory\Annotation\Autowired;
 use CaioMarcatti12\Web\WebServer;
 
 class SpringApplication
@@ -22,9 +17,7 @@ class SpringApplication
 //    #[Autowired]
 //    protected Installer $installer;
 //
-//    #[Autowired]
-//    protected WebServer $webServer;
-//
+
 //    #[Autowired]
 //    protected Compiler $compiler;
 //
@@ -41,6 +34,7 @@ class SpringApplication
 //     */
     public function start(): void
     {
+        InstanceFactory::resolveProperties($this);
 //        $args = $this->argvParser->getAll();
 //
 //        if(isset($args['command'])){
@@ -63,10 +57,7 @@ class SpringApplication
 //            return;
 //        }
 //
-//        if(isset($args['webserver'])){
-//            $this->webServer->run();
-//            return;
-//        }
+
 //
 //        throw new ApplicationNotFound();
     }
