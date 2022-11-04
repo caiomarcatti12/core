@@ -3,8 +3,8 @@
 namespace CaioMarcatti12\Bean\Exception;
 
 use CaioMarcatti12\Bean\Annotation\AliasFor;
-use Exception;
 use CaioMarcatti12\Bean\Enum\BeanType;
+use Exception;
 use Throwable;
 
 #[AliasFor(BeanType::EXCEPTION)]

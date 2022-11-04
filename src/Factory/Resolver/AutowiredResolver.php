@@ -2,13 +2,12 @@
 
 namespace CaioMarcatti12\Factory\Resolver;
 
-use ReflectionProperty;
 use CaioMarcatti12\Bean\Annotation\AnnotationResolver;
 use CaioMarcatti12\Bean\BeanLoader;
 use CaioMarcatti12\Bean\Interfaces\PropertyResolverInterface;
-use CaioMarcatti12\Validation\Assert;
-
 use CaioMarcatti12\Factory\Annotation\Autowired;
+use CaioMarcatti12\Validation\Assert;
+use ReflectionProperty;
 
 #[AnnotationResolver(Autowired::class)]
 class AutowiredResolver implements PropertyResolverInterface

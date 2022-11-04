@@ -5,10 +5,10 @@ namespace CaioMarcatti12\Bean\Enum;
 enum BeanType : string
 {
 //    case RESOLVER = "RESOLVER";
-//    case CONTROLLER = "CONTROLLER";
+    case CONTROLLER = "CONTROLLER";
     case EXCEPTION = "EXCEPTION";
 //    case SERVICE = "SERVICE";
-//    case REQUEST_MAPPING = "REQUEST_MAPPING";
+    case REQUEST_MAPPING = "REQUEST_MAPPING";
 //    case PAYLOAD_BODY = "PAYLOAD_BODY";
 //    case PAYLOAD_HEADER = "PAYLOAD_HEADER";
 //    case VALIDATOR = "VALIDATOR";

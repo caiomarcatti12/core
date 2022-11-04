@@ -1,5 +1,5 @@
 <?php
-//
+
 //namespace CaioMarcatti12\Bean;
 //
 //use CaioMarcatti12\Bean\Annotation\AnnotationResolver;
