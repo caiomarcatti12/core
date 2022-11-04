@@ -14,5 +14,8 @@ class SpringApplication
         InstanceFactory::resolveProperties($this);
     }
 
-    public abstract function start(): void;
+    public function start(): void
+    {
+
+    }
 }
