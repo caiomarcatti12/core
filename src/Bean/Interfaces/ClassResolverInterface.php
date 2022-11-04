@@ -1,6 +1,6 @@
 <?php
 
-namespace CaioMarcatti12\Bean\Interfaces;
+namespace CaioMarcatti12\Core\Bean\Interfaces;
 
 interface ClassResolverInterface
 {

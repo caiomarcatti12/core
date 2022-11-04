@@ -1,13 +1,13 @@
 <?php
 
-namespace CaioMarcatti12\Factory;
+namespace CaioMarcatti12\Core\Factory;
 
-use CaioMarcatti12\Bean\Exception\NotConcreteInstanceException;
-use CaioMarcatti12\Bean\Objects\BeanCache;
-use CaioMarcatti12\Bean\Objects\BeanProxy;
-use CaioMarcatti12\Bean\Resolver\ClassResolver;
-use CaioMarcatti12\Bean\Resolver\PropertyResolver;
-use CaioMarcatti12\Validation\Assert;
+use CaioMarcatti12\Core\Bean\Exception\NotConcreteInstanceException;
+use CaioMarcatti12\Core\Bean\Objects\BeanCache;
+use CaioMarcatti12\Core\Bean\Objects\BeanProxy;
+use CaioMarcatti12\Core\Bean\Resolver\ClassResolver;
+use CaioMarcatti12\Core\Bean\Resolver\PropertyResolver;
+use CaioMarcatti12\Core\Validation\Assert;
 
 class InstanceFactory
 {

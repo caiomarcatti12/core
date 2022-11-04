@@ -1,9 +1,9 @@
 <?php
 
-namespace CaioMarcatti12\Bean\Exception;
+namespace CaioMarcatti12\Core\Bean\Exception;
 
-use CaioMarcatti12\Bean\Annotation\AliasFor;
-use CaioMarcatti12\Bean\Enum\BeanType;
+use CaioMarcatti12\Core\Bean\Annotation\AliasFor;
+use CaioMarcatti12\Core\Bean\Enum\BeanType;
 use Exception;
 use Throwable;
 

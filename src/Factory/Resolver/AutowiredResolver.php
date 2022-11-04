@@ -1,12 +1,12 @@
 <?php
 
-namespace CaioMarcatti12\Factory\Resolver;
+namespace CaioMarcatti12\Core\Factory\Resolver;
 
-use CaioMarcatti12\Bean\Annotation\AnnotationResolver;
-use CaioMarcatti12\Bean\BeanLoader;
-use CaioMarcatti12\Bean\Interfaces\PropertyResolverInterface;
-use CaioMarcatti12\Factory\Annotation\Autowired;
-use CaioMarcatti12\Validation\Assert;
+use CaioMarcatti12\Core\Bean\Annotation\AnnotationResolver;
+use CaioMarcatti12\Core\Bean\BeanLoader;
+use CaioMarcatti12\Core\Bean\Interfaces\PropertyResolverInterface;
+use CaioMarcatti12\Core\Factory\Annotation\Autowired;
+use CaioMarcatti12\Core\Validation\Assert;
 use ReflectionProperty;
 
 #[AnnotationResolver(Autowired::class)]

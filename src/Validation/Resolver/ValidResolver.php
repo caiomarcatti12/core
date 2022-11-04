@@ -1,18 +1,18 @@
 <?php
 //
-//namespace CaioMarcatti12\Validation\Resolver;
+//namespace CaioMarcatti12\Core\Validation\Resolver;
 //
 //use MongoDB\BSON\ObjectId;
 //use ReflectionClass;
-//use CaioMarcatti12\Bean\Annotation\AnnotationResolver;
-//use CaioMarcatti12\Bean\Enum\BeanType;
-//use CaioMarcatti12\Bean\InstanceMaker;
-//use CaioMarcatti12\Bean\Interfaces\ClassResolverInterface;
-//use CaioMarcatti12\Bean\Interfaces\PropertyResolverInterface;
-//use CaioMarcatti12\Bean\Objects\BeanAlias;
-//use CaioMarcatti12\Bean\Objects\BeanResolver;
-//use CaioMarcatti12\Validation\Annotation\Valid;
-//use CaioMarcatti12\Validation\Assert;
+//use CaioMarcatti12\Core\Bean\Annotation\AnnotationResolver;
+//use CaioMarcatti12\Core\Bean\Enum\BeanType;
+//use CaioMarcatti12\Core\Bean\InstanceMaker;
+//use CaioMarcatti12\Core\Bean\Interfaces\ClassResolverInterface;
+//use CaioMarcatti12\Core\Bean\Interfaces\PropertyResolverInterface;
+//use CaioMarcatti12\Core\Bean\Objects\BeanAlias;
+//use CaioMarcatti12\Core\Bean\Objects\BeanResolver;
+//use CaioMarcatti12\Core\Validation\Annotation\Valid;
+//use CaioMarcatti12\Core\Validation\Assert;
 //
 //#[AnnotationResolver(Valid::class)]
 //class ValidResolver implements ClassResolverInterface

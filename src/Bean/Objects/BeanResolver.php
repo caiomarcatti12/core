@@ -1,8 +1,8 @@
 <?php
 
-namespace CaioMarcatti12\Bean\Objects;
+namespace CaioMarcatti12\Core\Bean\Objects;
 
-use CaioMarcatti12\Validation\Assert;
+use CaioMarcatti12\Core\Validation\Assert;
 
 final class BeanResolver
 {

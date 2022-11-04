@@ -4,13 +4,13 @@
 //
 //use CaioMarcatti12\Logger\Log;
 //use CaioMarcatti12\Env\Property;
-//use CaioMarcatti12\Bean\BeanLoader;
+//use CaioMarcatti12\Core\Bean\BeanLoader;
 //use CaioMarcatti12\I18n\Translator;
 //use CaioMarcatti12\Event\EventLoader;
-//use CaioMarcatti12\Validation\Assert;
+//use CaioMarcatti12\Core\Validation\Assert;
 //use CaioMarcatti12\Cli\RouterResponseCLI;
 //use CaioMarcatti12\I18n\TranslatorLoader;
-//use CaioMarcatti12\Bean\Objects\BeanProxy;
+//use CaioMarcatti12\Core\Bean\Objects\BeanProxy;
 //use CaioMarcatti12\Web\Adapter\SwooleAdapter;
 //use CaioMarcatti12\Cli\Adapter\PhalconAdapter;
 //use CaioMarcatti12\Logger\Adapter\NoLogAdapter;
@@ -19,14 +19,14 @@
 //use CaioMarcatti12\Logger\Interfaces\LogInterface;
 //use CaioMarcatti12\Mailer\Adapter\PhpMailerAdapter;
 //use CaioMarcatti12\Captcha\Adapter\RecaptchaAdapter;
-//use CaioMarcatti12\Bean\Annotation\AnnotationResolver;
+//use CaioMarcatti12\Core\Bean\Annotation\AnnotationResolver;
 //use CaioMarcatti12\Cli\Interfaces\ArgvParserInterface;
 //use CaioMarcatti12\Mailer\Adapter\MemoryMailerAdapter;
 //use CaioMarcatti12\Captcha\Interfaces\CaptchaInterface;
 //use CaioMarcatti12\Captcha\Adapter\CaptchaMemoryAdapter;
 //use CaioMarcatti12\Mailer\Interfaces\SendEmailInterface;
 //use CaioMarcatti12\QueueManager\Adapter\RabbitMQAdapter;
-//use CaioMarcatti12\Bean\Interfaces\ClassResolverInterface;
+//use CaioMarcatti12\Core\Bean\Interfaces\ClassResolverInterface;
 //use CaioMarcatti12\CacheManager\Adapter\RedisCacheAdapter;
 //use CaioMarcatti12\CacheManager\Interfaces\CacheInterface;
 //use CaioMarcatti12\Event\Interfaces\EventManagerInterface;

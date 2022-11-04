@@ -1,6 +1,6 @@
 <?php
 //
-//namespace CaioMarcatti12\Validation\Annotation;
+//namespace CaioMarcatti12\Core\Validation\Annotation;
 //
 //use Attribute;
 //

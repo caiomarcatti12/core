@@ -1,10 +1,10 @@
 <?php
 //
-//namespace CaioMarcatti12\Validation\Annotation;
+//namespace CaioMarcatti12\Core\Validation\Annotation;
 //
 //use Attribute;
-//use CaioMarcatti12\Bean\Annotation\AliasFor;
-//use CaioMarcatti12\Bean\Enum\BeanType;
+//use CaioMarcatti12\Core\Bean\Annotation\AliasFor;
+//use CaioMarcatti12\Core\Bean\Enum\BeanType;
 //
 //#[AliasFor(BeanType::VALIDATOR)]
 //#[Attribute(Attribute::TARGET_PROPERTY)]

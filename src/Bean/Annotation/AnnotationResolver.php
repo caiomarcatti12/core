@@ -1,10 +1,10 @@
 <?php
 
-namespace CaioMarcatti12\Bean\Annotation;
+namespace CaioMarcatti12\Core\Bean\Annotation;
 
 use Attribute;
-use CaioMarcatti12\Bean\Exception\BadConstructAnnotationResolverException;
-use CaioMarcatti12\Validation\Assert;
+use CaioMarcatti12\Core\Bean\Exception\BadConstructAnnotationResolverException;
+use CaioMarcatti12\Core\Validation\Assert;
 
 #[Attribute(Attribute::TARGET_CLASS)]
 class AnnotationResolver

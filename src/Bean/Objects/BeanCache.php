@@ -1,6 +1,6 @@
 <?php
 
-namespace CaioMarcatti12\Bean\Objects;
+namespace CaioMarcatti12\Core\Bean\Objects;
 
 final class BeanCache
 {

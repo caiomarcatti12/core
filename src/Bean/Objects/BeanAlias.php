@@ -1,8 +1,8 @@
 <?php
 
-namespace CaioMarcatti12\Bean\Objects;
+namespace CaioMarcatti12\Core\Bean\Objects;
 
-use CaioMarcatti12\Bean\Enum\BeanType;
+use CaioMarcatti12\Core\Bean\Enum\BeanType;
 
 final class BeanAlias
 {

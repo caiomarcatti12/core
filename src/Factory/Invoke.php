@@ -1,18 +1,18 @@
 <?php
 
-namespace CaioMarcatti12\Factory;
+namespace CaioMarcatti12\Core\Factory;
 
-use CaioMarcatti12\Factory\InstanceFactory;
-use CaioMarcatti12\Bean\Resolver\ClassResolver;
-use CaioMarcatti12\Bean\Resolver\MethodResolver;
-use CaioMarcatti12\Bean\Resolver\ParameterResolver;
+use CaioMarcatti12\Core\Factory\InstanceFactory;
+use CaioMarcatti12\Core\Bean\Resolver\ClassResolver;
+use CaioMarcatti12\Core\Bean\Resolver\MethodResolver;
+use CaioMarcatti12\Core\Bean\Resolver\ParameterResolver;
 use ReflectionClass;
 use ReflectionMethod;
 use CaioMarcatti12\Data\Request\Objects\Body;
-use CaioMarcatti12\Validation\Assert;
+use CaioMarcatti12\Core\Validation\Assert;
 use MongoDB\BSON\ObjectId;
-use CaioMarcatti12\Bean\BeanLoader;
-use CaioMarcatti12\Bean\Objects\BeanCache;
+use CaioMarcatti12\Core\Bean\BeanLoader;
+use CaioMarcatti12\Core\Bean\Objects\BeanCache;
 use CaioMarcatti12\Data\Request\Objects\Header;
 use CaioMarcatti12\Router\Exception\ResponseTypeException;
 use CaioMarcatti12\Router\Interfaces\RouterResponseInterface;

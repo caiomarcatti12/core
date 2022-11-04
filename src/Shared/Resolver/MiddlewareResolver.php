@@ -4,9 +4,9 @@
 //
 //use PhpParser\Node\Attribute;
 //use ReflectionMethod;
-//use CaioMarcatti12\Bean\Annotation\AnnotationResolver;
-//use CaioMarcatti12\Bean\BeanLoader;
-//use CaioMarcatti12\Bean\Interfaces\MethodResolverInterface;
+//use CaioMarcatti12\Core\Bean\Annotation\AnnotationResolver;
+//use CaioMarcatti12\Core\Bean\BeanLoader;
+//use CaioMarcatti12\Core\Bean\Interfaces\MethodResolverInterface;
 //use CaioMarcatti12\Core\Annotation\Middleware;
 //use CaioMarcatti12\Router\Interfaces\RouterMiddleware;
 //

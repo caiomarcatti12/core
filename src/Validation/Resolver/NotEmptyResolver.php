@@ -1,13 +1,13 @@
 <?php
 //
-//namespace CaioMarcatti12\Validation\Resolver;
+//namespace CaioMarcatti12\Core\Validation\Resolver;
 //
 //use ReflectionProperty;
-//use CaioMarcatti12\Bean\Annotation\AnnotationResolver;
-//use CaioMarcatti12\Bean\Interfaces\PropertyResolverInterface;
+//use CaioMarcatti12\Core\Bean\Annotation\AnnotationResolver;
+//use CaioMarcatti12\Core\Bean\Interfaces\PropertyResolverInterface;
 //use CaioMarcatti12\I18n\Translator;
-//use CaioMarcatti12\Validation\Annotation\NotEmpty;
-//use CaioMarcatti12\Validation\Assert;
+//use CaioMarcatti12\Core\Validation\Annotation\NotEmpty;
+//use CaioMarcatti12\Core\Validation\Assert;
 //
 //#[AnnotationResolver(NotEmpty::class)]
 //class NotEmptyResolver implements PropertyResolverInterface

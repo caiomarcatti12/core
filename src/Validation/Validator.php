@@ -1,6 +1,6 @@
 <?php
 //
-//namespace CaioMarcatti12\Validation;
+//namespace CaioMarcatti12\Core\Validation;
 //
 //class Validator {
 //    public static function valid($data, $rules): bool {

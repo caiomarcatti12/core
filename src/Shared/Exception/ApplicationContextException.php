@@ -3,7 +3,7 @@
 //namespace CaioMarcatti12\Core\Exception;
 //
 //use Exception;
-//use CaioMarcatti12\Bean\Enum\BeanType;
+//use CaioMarcatti12\Core\Bean\Enum\BeanType;
 //use CaioMarcatti12\Core\Annotation\AliasFor;
 //use Throwable;
 //

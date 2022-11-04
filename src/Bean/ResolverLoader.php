@@ -1,11 +1,11 @@
 <?php
 
-namespace CaioMarcatti12\Bean;
+namespace CaioMarcatti12\Core\Bean;
 
-use CaioMarcatti12\Bean\Annotation\AnnotationResolver;
-use CaioMarcatti12\Bean\Objects\BeanResolver;
+use CaioMarcatti12\Core\Bean\Annotation\AnnotationResolver;
+use CaioMarcatti12\Core\Bean\Objects\BeanResolver;
 use CaioMarcatti12\Core\ExtractPhpNamespace;
-use CaioMarcatti12\Validation\Assert;
+use CaioMarcatti12\Core\Validation\Assert;
 
 class ResolverLoader
 {

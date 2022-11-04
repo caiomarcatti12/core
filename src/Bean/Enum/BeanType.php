@@ -1,6 +1,6 @@
 <?php
 
-namespace CaioMarcatti12\Bean\Enum;
+namespace CaioMarcatti12\Core\Bean\Enum;
 
 enum BeanType : string
 {

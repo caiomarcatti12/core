@@ -1,8 +1,8 @@
 <?php
-namespace CaioMarcatti12\Bean\Annotation;
+namespace CaioMarcatti12\Core\Bean\Annotation;
 
 use Attribute;
-use CaioMarcatti12\Bean\Enum\BeanType;
+use CaioMarcatti12\Core\Bean\Enum\BeanType;
 
 #[Attribute(Attribute::TARGET_CLASS)]
 final class AliasFor

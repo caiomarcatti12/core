@@ -1,14 +1,14 @@
 <?php
 //
-//namespace CaioMarcatti12\Validation\Resolver;
+//namespace CaioMarcatti12\Core\Validation\Resolver;
 //
 //use ReflectionAttribute;
 //use ReflectionProperty;
-//use CaioMarcatti12\Bean\Annotation\AnnotationResolver;
-//use CaioMarcatti12\Bean\Impl\PropertyResolverInterface;
-//use CaioMarcatti12\Validation\Annotation\BetweenValue;
-//use CaioMarcatti12\Validation\Assert;
-//use CaioMarcatti12\Validation\Exception\BetweenValueException;
+//use CaioMarcatti12\Core\Bean\Annotation\AnnotationResolver;
+//use CaioMarcatti12\Core\Bean\Impl\PropertyResolverInterface;
+//use CaioMarcatti12\Core\Validation\Annotation\BetweenValue;
+//use CaioMarcatti12\Core\Validation\Assert;
+//use CaioMarcatti12\Core\Validation\Exception\BetweenValueException;
 //
 //#[AnnotationResolver(BetweenValue::class)]
 //class BetweenValueResolver implements PropertyResolverInterface

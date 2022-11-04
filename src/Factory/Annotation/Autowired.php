@@ -1,6 +1,6 @@
 <?php
 
-namespace CaioMarcatti12\Factory\Annotation;
+namespace CaioMarcatti12\Core\Factory\Annotation;
 
 use Attribute;
 

@@ -2,8 +2,8 @@
 
 namespace CaioMarcatti12\Core;
 
-use CaioMarcatti12\Factory\InstanceFactory;
-use CaioMarcatti12\Factory\Annotation\Autowired;
+use CaioMarcatti12\Core\Factory\InstanceFactory;
+use CaioMarcatti12\Core\Factory\Annotation\Autowired;
 use CaioMarcatti12\Web\WebServer;
 
 class SpringApplication

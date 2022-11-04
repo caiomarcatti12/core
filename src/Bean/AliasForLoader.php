@@ -1,9 +1,9 @@
 <?php
 //
-//namespace CaioMarcatti12\Bean;
+//namespace CaioMarcatti12\Core\Bean;
 //
-//use CaioMarcatti12\Bean\Objects\BeanAlias;
-//use CaioMarcatti12\Validation\Assert;
+//use CaioMarcatti12\Core\Bean\Objects\BeanAlias;
+//use CaioMarcatti12\Core\Validation\Assert;
 //
 //class AliasForLoader
 //{

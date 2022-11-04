@@ -1,12 +1,12 @@
 <?php
 
-namespace CaioMarcatti12\Bean\Resolver;
+namespace CaioMarcatti12\Core\Bean\Resolver;
 
-use CaioMarcatti12\Factory\InstanceFactory;
+use CaioMarcatti12\Core\Factory\InstanceFactory;
 use ReflectionClass;
-use CaioMarcatti12\Bean\Interfaces\ClassResolverInterface;
-use CaioMarcatti12\Bean\Objects\BeanResolver;
-use CaioMarcatti12\Validation\Assert;
+use CaioMarcatti12\Core\Bean\Interfaces\ClassResolverInterface;
+use CaioMarcatti12\Core\Bean\Objects\BeanResolver;
+use CaioMarcatti12\Core\Validation\Assert;
 
 class ClassResolver implements ClassResolverInterface
 {
