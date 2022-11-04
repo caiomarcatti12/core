@@ -38,9 +38,9 @@ class InstanceFactory
     {
         $reflectionClass = new \ReflectionClass($class);
 
-        $instance = $reflectionClass->newInstanceArgs($arguments);
-
         if(!$reflectionClass->isInstantiable()) throw new NotConcreteInstanceException($reflectionClass->getName());
+
+        $instance = $reflectionClass->newInstanceArgs($arguments);
 
         self::resolveProperties($instance);
         return $instance;

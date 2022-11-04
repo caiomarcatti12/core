@@ -11,7 +11,7 @@
 //use CaioMarcatti12\Cli\RouterResponseCLI;
 //use CaioMarcatti12\I18n\TranslatorLoader;
 //use CaioMarcatti12\Core\Bean\Objects\BeanProxy;
-//use CaioMarcatti12\Web\Adapter\SwooleAdapter;
+//use CaioMarcatti12\Webserver\Adapter\SwooleAdapter;
 //use CaioMarcatti12\Cli\Adapter\PhalconAdapter;
 //use CaioMarcatti12\Logger\Adapter\NoLogAdapter;
 //use CaioMarcatti12\Security\Adapter\JwtAdapter;
@@ -34,7 +34,7 @@
 //use CaioMarcatti12\Core\Annotation\EnableAutoConfiguration;
 //use CaioMarcatti12\Event\Adapter\EventManagerMemoryAdapter;
 //use CaioMarcatti12\QueueManager\Adapter\QueueMemoryAdapter;
-//use CaioMarcatti12\Web\Interfaces\WebServerRunnerInterface;
+//use CaioMarcatti12\Webserver\Interfaces\WebServerRunnerInterface;
 //use CaioMarcatti12\Observability\Interfaces\MetricInterface;
 //use CaioMarcatti12\Router\Interfaces\RouterResponseInterface;
 //use CaioMarcatti12\Security\Interfaces\TokenProviderInterface;
