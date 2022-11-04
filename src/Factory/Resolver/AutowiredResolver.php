@@ -6,6 +6,7 @@ use CaioMarcatti12\Core\Bean\Annotation\AnnotationResolver;
 use CaioMarcatti12\Core\Bean\BeanLoader;
 use CaioMarcatti12\Core\Bean\Interfaces\PropertyResolverInterface;
 use CaioMarcatti12\Core\Factory\Annotation\Autowired;
+use CaioMarcatti12\Core\Factory\InstanceFactory;
 use CaioMarcatti12\Core\Validation\Assert;
 use ReflectionProperty;
 
@@ -20,7 +21,7 @@ class AutowiredResolver implements PropertyResolverInterface
 //        if($this->isRepository($name)){
 //            $reflectionProperty->setValue($instance, (new RepositoryFactory($name))->factory());
 //        }else{
-            $reflectionProperty->setValue($instance, BeanLoader::loader($name));
+            $reflectionProperty->setValue($instance, InstanceFactory::createIfNotExists($name));
 //        }
     }
 
