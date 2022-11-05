@@ -1,6 +1,6 @@
 <?php
 
-namespace CaioMarcatti12\Core\Launcher\Annotation;
+namespace CaioMarcatti12\Core\Launcher\Enum;
 
 use CaioMarcatti12\Core\ExtractPhpNamespace;
 use CaioMarcatti12\Core\Factory\Invoke;

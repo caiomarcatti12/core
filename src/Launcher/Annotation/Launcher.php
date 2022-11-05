@@ -3,6 +3,7 @@
 namespace CaioMarcatti12\Core\Launcher\Annotation;
 
 use Attribute;
+use CaioMarcatti12\Core\Launcher\Enum\LauncherPriorityEnum;
 
 #[Attribute(Attribute::TARGET_CLASS)]
 class Launcher

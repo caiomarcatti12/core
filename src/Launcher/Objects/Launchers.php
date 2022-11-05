@@ -2,7 +2,7 @@
 namespace CaioMarcatti12\Core\Launcher\Objects;
 
 
-use CaioMarcatti12\Core\Launcher\Annotation\LauncherPriorityEnum;
+use CaioMarcatti12\Core\Launcher\Enum\LauncherPriorityEnum;
 
 class Launchers
 {
