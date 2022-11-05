@@ -6,9 +6,9 @@ use CaioMarcatti12\Core\Bean\AliasForLoader;
 use CaioMarcatti12\Core\Bean\ResolverLoader;
 use CaioMarcatti12\Core\Factory\InstanceFactory;
 use CaioMarcatti12\Core\Launcher\Annotation\Launcher;
-use CaioMarcatti12\Core\Launcher\Annotation\LauncherLoader;
-use CaioMarcatti12\Core\Launcher\Annotation\LauncherPriorityEnum;
-use CaioMarcatti12\Core\Launcher\Annotation\LauncherRun;
+use CaioMarcatti12\Core\Launcher\Enum\LauncherPriorityEnum;
+use CaioMarcatti12\Core\Launcher\LauncherLoader;
+use CaioMarcatti12\Core\Launcher\LauncherRun;
 
 #[Launcher]
 class Application
