@@ -10,7 +10,6 @@ use CaioMarcatti12\Core\Launcher\Enum\LauncherPriorityEnum;
 use CaioMarcatti12\Core\Launcher\LauncherLoader;
 use CaioMarcatti12\Core\Launcher\LauncherRun;
 
-#[Launcher]
 class Application
 {
     public function __construct()

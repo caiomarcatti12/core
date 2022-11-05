@@ -26,10 +26,10 @@ class LauncherLoader
             if(Assert::isNotEmpty($reflectionAttributes)) {
 
                 /** @var \ReflectionAttribute $attribute */
-                $attributeMapping = array_shift($reflectionAttributesMapping);
+                $attribute = array_shift($reflectionAttributes);
 
                 /** @var Launcher $instanceAttributeClass */
-                $instanceAttributeClass = $attributeMapping->newInstance();
+                $instanceAttributeClass = $attribute->newInstance();
 
                 $priority = $instanceAttributeClass->getPriority();
 
