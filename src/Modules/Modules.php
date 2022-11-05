@@ -11,10 +11,14 @@ class Modules
     private static array $modules = [];
 
     public static function register(ModulesEnum $module): void{
-        self::$modules[$module->name] = true;
+        self::$modules[$module->name] = false;
     }
 
-    public static function has(ModulesEnum $module): bool{
-        return isset(self::$modules[$module->name]);
+    public static function enable(ModulesEnum $module): bool{
+        return self::$modules[$module->name] = true;
+    }
+
+    public static function isEnabled(ModulesEnum $module): bool{
+        return isset(self::$modules[$module->name]) && self::$modules[$module->name] === true;
     }
 }
