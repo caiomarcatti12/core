@@ -2,6 +2,7 @@
 
 namespace CaioMarcatti12\Core\Factory;
 
+use CaioMarcatti12\Core\Bean\Objects\BeanProxy;
 use CaioMarcatti12\Core\Bean\Resolver\ClassResolver;
 use CaioMarcatti12\Core\Bean\Resolver\MethodResolver;
 use CaioMarcatti12\Core\Bean\Resolver\ParameterResolver;
@@ -116,6 +117,12 @@ class Invoke
             return InstanceFactory::createIfNotExists(RouterResponseInterface::class, [$response, 200], false);
         }
 
-        return InstanceFactory::createIfNotExists(RouterResponseInterface::class, ['', 200], false);
+        $classProxyRouterInterface = BeanProxy::get(RouterResponseInterface::class);
+
+        if (Assert::inArray($classProxyRouterInterface, [RouterResponseInterface::class])) {
+            return null;
+        }
+
+        return InstanceFactory::createIfNotExists($classProxyRouterInterface, ['', 200], false);
     }
 }
