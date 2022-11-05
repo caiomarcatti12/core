@@ -10,10 +10,6 @@ class Modules
 {
     private static array $modules = [];
 
-    public static function register(ModulesEnum $module): void{
-        self::$modules[$module->name] = false;
-    }
-
     public static function enable(ModulesEnum $module): bool{
         return self::$modules[$module->name] = true;
     }
