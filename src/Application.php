@@ -23,8 +23,8 @@ class Application
 
         InstanceFactory::resolveProperties($this);
 
-        LauncherRun::execute(LauncherPriorityEnum::AFTER_LOAD_APPLICATION);
         LauncherRun::execute(LauncherPriorityEnum::AFTER_LOAD_FRAMEWORK);
+        LauncherRun::execute(LauncherPriorityEnum::AFTER_LOAD_APPLICATION);
     }
 
     public function start(): void
