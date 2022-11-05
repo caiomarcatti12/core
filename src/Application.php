@@ -19,11 +19,10 @@ class Application
         (new LauncherLoader())->handler();
 
         LauncherRun::execute(LauncherPriorityEnum::BEFORE_LOAD_FRAMEWORK);
-        LauncherRun::execute(LauncherPriorityEnum::BEFORE_LOAD_APPLICATION);
-
         InstanceFactory::resolveProperties($this);
-
         LauncherRun::execute(LauncherPriorityEnum::AFTER_LOAD_FRAMEWORK);
+
+        LauncherRun::execute(LauncherPriorityEnum::BEFORE_LOAD_APPLICATION);
         LauncherRun::execute(LauncherPriorityEnum::AFTER_LOAD_APPLICATION);
     }
 
