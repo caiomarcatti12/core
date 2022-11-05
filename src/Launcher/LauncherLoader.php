@@ -3,6 +3,7 @@
 namespace CaioMarcatti12\Core\Launcher;
 
 use CaioMarcatti12\Core\ExtractPhpNamespace;
+use CaioMarcatti12\Core\Launcher\Annotation\Launcher;
 use CaioMarcatti12\Core\Launcher\Objects\Launchers;
 use CaioMarcatti12\Core\Validation\Assert;
 
