@@ -15,4 +15,5 @@ enum ModulesEnum
     case FILE_MANAGER;
     case DIRECTORY_MANAGER;
     case COMMAND;
+    case CACHE;
 }
