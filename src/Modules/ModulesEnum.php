@@ -16,4 +16,5 @@ enum ModulesEnum
     case DIRECTORY_MANAGER;
     case COMMAND;
     case CACHE;
+    case CAPTCHA;
 }
