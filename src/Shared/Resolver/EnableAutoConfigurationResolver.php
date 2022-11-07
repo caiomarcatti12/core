@@ -36,7 +36,7 @@
 //use CaioMarcatti12\QueueManager\Adapter\QueueMemoryAdapter;
 //use CaioMarcatti12\Webserver\Interfaces\WebServerRunnerInterface;
 //use CaioMarcatti12\Observability\Interfaces\MetricInterface;
-//use CaioMarcatti12\Router\Interfaces\RouterResponseInterface;
+//use CaioMarcatti12\Objects\Interfaces\RouterResponseInterface;
 //use CaioMarcatti12\Security\Interfaces\TokenProviderInterface;
 //use CaioMarcatti12\Observability\Adapter\PrometheusRedisAdapter;
 //use CaioMarcatti12\Observability\Adapter\PrometheusMemoryAdapter;

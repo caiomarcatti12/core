@@ -8,7 +8,7 @@
 //use CaioMarcatti12\Core\Bean\BeanLoader;
 //use CaioMarcatti12\Core\Bean\Interfaces\MethodResolverInterface;
 //use CaioMarcatti12\Core\Annotation\Middleware;
-//use CaioMarcatti12\Router\Interfaces\RouterMiddleware;
+//use CaioMarcatti12\Objects\Interfaces\RouterMiddleware;
 //
 //#[AnnotationResolver(Middleware::class)]
 //class MiddlewareResolver implements MethodResolverInterface
