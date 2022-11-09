@@ -32,11 +32,7 @@ class Invoke
         self::resolveAttributeMethod($instance, $reflectionMethod);
         $parameters = self::resolveParametersMethod($reflectionMethod);
 
-        $returnTypeName = self::getReturnTypeName($reflectionMethod);
-        $presenter = self::getPresenter($reflectionMethod);
-        $response = $reflectionMethod->invokeArgs($instance, $parameters);
-
-        return self::makeResponse($returnTypeName, $presenter, $response);
+        return $reflectionMethod->invokeArgs($instance, $parameters);
     }
 
     private static function loaderClass(string $className): mixed
@@ -77,52 +73,5 @@ class Invoke
         }
 
         return $parameters;
-    }
-
-
-    private static function getReturnTypeName(ReflectionMethod $reflectionMethod): string
-    {
-        $returnType = $reflectionMethod->getReturnType();
-
-        if (Assert::isEmpty($returnType)) throw new ResponseTypeException();
-
-        return $returnType->getName();
-    }
-
-
-    private static function getPresenter(ReflectionMethod $reflectionMethod): string
-    {
-        /** @var \ReflectionAttribute $reflectionAttribute */
-        foreach($reflectionMethod->getAttributes(Presenter::class) as $reflectionAttribute){
-            /** @var Presenter $instanceAttribute */
-            $instanceAttribute = $reflectionAttribute->newInstance();
-
-            if(Assert::equalsIgnoreCase($instanceAttribute->getContentTypeEnum()->value, Header::get('Content-Type', ''))){
-                return $instanceAttribute->getPresenterClass();
-            }
-        }
-
-        return '';
-    }
-
-    private static function makeResponse(string $returnTypeName, string $presenter, mixed $response): mixed
-    {
-        BeanCache::destroy(RouterResponseInterface::class);
-
-        if (Assert::inArray($returnTypeName, [RouterResponseInterface::class, RouterResponseWeb::class])) {
-            return $response;
-        } else if (Assert::isNotEmpty($presenter)) {
-            return InstanceFactory::createIfNotExists($presenter, [$response, 200], false);
-        } else if (!Assert::equals($returnTypeName, "void")) {
-            return InstanceFactory::createIfNotExists(RouterResponseInterface::class, [$response, 200], false);
-        }
-
-        $classProxyRouterInterface = BeanProxy::get(RouterResponseInterface::class);
-
-        if (Assert::inArray($classProxyRouterInterface, [RouterResponseInterface::class])) {
-            return null;
-        }
-
-        return InstanceFactory::createIfNotExists($classProxyRouterInterface, ['', 200], false);
     }
 }

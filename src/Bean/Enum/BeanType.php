@@ -18,5 +18,5 @@ enum BeanType : string
 //    case REPOSITORY = "REPOSITORY";
 //    case DATABASE_CONNECTION = "DATABASE_CONNECTION";
 //    case COLLECTION = "COLLECTION";
-//    case PRESENTER = "PRESENTER";
+    case PRESENTER = "PRESENTER";
 }
