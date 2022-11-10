@@ -17,4 +17,5 @@ enum ModulesEnum
     case COMMAND;
     case CACHE;
     case CAPTCHA;
+    case CLI;
 }
