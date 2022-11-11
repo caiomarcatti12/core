@@ -15,8 +15,8 @@ enum BeanType : string
 //    case COMMAND = "COMMAND";
 //    case PUBSUB = "PUBSUB";
 //    case QUEUE = "QUEUE";
-//    case REPOSITORY = "REPOSITORY";
+    case REPOSITORY = "REPOSITORY";
 //    case DATABASE_CONNECTION = "DATABASE_CONNECTION";
-//    case COLLECTION = "COLLECTION";
+    case COLLECTION = "COLLECTION";
     case PRESENTER = "PRESENTER";
 }

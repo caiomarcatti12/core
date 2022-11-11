@@ -18,4 +18,5 @@ enum ModulesEnum
     case CACHE;
     case CAPTCHA;
     case CLI;
+    case WEBSOCKETSEVER;
 }
