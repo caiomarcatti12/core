@@ -1,8 +1,8 @@
 <?php
-//
-//namespace CaioMarcatti12\Core\Interfaces;
-//
-//interface ServerRunInterface
-//{
-//    public function run(): void;
-//}
+
+namespace CaioMarcatti12\Core\Shared\Interfaces;
+
+interface ServerRunInterface
+{
+    public function run(): void;
+}

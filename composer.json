@@ -14,8 +14,8 @@
       "CaioMarcatti12\\Core\\" :  "src/"
     }
   },
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "require": {
-
+    "caiomarcatti12/cli": "dev-master"
   }
 }
