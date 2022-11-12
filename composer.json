@@ -16,6 +16,8 @@
   },
   "minimum-stability": "dev",
   "require": {
-    "caiomarcatti12/cli": "dev-master"
+    "caiomarcatti12/cli": "dev-master",
+    "caiomarcatti12/compiler": "dev-master"
+
   }
 }

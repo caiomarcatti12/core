@@ -86,7 +86,7 @@ class Application
 
     private function startCompiler(): void
     {
-        $enabled = $this->argvParser->has('compiler');
+        $enabled = $this->argvParser->has('compile');
 
         if($enabled){
             /** @var ServerRunInterface $server */

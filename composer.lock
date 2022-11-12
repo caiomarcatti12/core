@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5ff07740f73d00a86f67857e35840438",
+    "content-hash": "0d161322a72514532c9ece97256bd55f",
     "packages": [
         {
             "name": "caiomarcatti12/cli",
@@ -46,6 +46,46 @@
                 "source": "https://github.com/caiomarcatti12/cli/tree/master"
             },
             "time": "2022-11-10T11:05:14+00:00"
+        },
+        {
+            "name": "caiomarcatti12/compiler",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/caiomarcatti12/compiler.git",
+                "reference": "1558da363a54bef8f0f01cc65ef12d0fec820e95"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/caiomarcatti12/compiler/zipball/1558da363a54bef8f0f01cc65ef12d0fec820e95",
+                "reference": "1558da363a54bef8f0f01cc65ef12d0fec820e95",
+                "shasum": ""
+            },
+            "require": {
+                "caiomarcatti12/core": "dev-master"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "CaioMarcatti12\\Compiler\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Caio Marcatti",
+                    "email": "caiomarcatti12@gmail.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/caiomarcatti12/compiler/issues",
+                "source": "https://github.com/caiomarcatti12/compiler/tree/master"
+            },
+            "time": "2022-11-12T15:51:25+00:00"
         },
         {
             "name": "phalcon/cli-options-parser",
@@ -130,7 +170,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "caiomarcatti12/cli": 20
+        "caiomarcatti12/cli": 20,
+        "caiomarcatti12/compiler": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
