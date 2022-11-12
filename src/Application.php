@@ -3,8 +3,10 @@
 namespace CaioMarcatti12\Core;
 
 use CaioMarcatti12\CacheManager\Annotation\EnableCache;
+use CaioMarcatti12\Cli\Adapter\PhalconAdapter;
 use CaioMarcatti12\Cli\Annotation\EnableCli;
 use CaioMarcatti12\Cli\Interfaces\ArgvParserInterface;
+use CaioMarcatti12\Compiler\Compiler;
 use CaioMarcatti12\Core\Bean\AliasForLoader;
 use CaioMarcatti12\Core\Bean\ResolverLoader;
 use CaioMarcatti12\Core\Factory\Annotation\Autowired;
@@ -21,10 +23,8 @@ use CaioMarcatti12\QueueManager\QueueConsumerServer;
 use CaioMarcatti12\Webserver\WebServer;
 use CaioMarcatti12\WebSocketServer\WebSocketServer;
 
-#[EnableCli]
 class Application
 {
-    #[Autowired]
     private ArgvParserInterface $argvParser;
 
     public function __construct()
@@ -32,6 +32,8 @@ class Application
         (new AliasForLoader())->load();
         (new ResolverLoader())->load();
         (new LauncherLoader())->handler();
+
+        $this->argvParser = new PhalconAdapter();
 
         LauncherRun::execute(LauncherPriorityEnum::BEFORE_LOAD_FRAMEWORK);
         InstanceFactory::resolveProperties($this);
@@ -46,6 +48,7 @@ class Application
         $this->startQueueServer();
         $this->startWebServer();
         $this->startWebSocketServer();
+        $this->startCompiler();
     }
 
     private function startQueueServer(): void
@@ -61,9 +64,9 @@ class Application
 
     private function startWebServer(): void
     {
-        $enabled = $this->argvParser->get('webserver', false);
+        $enabled = $this->argvParser->has('webserver');
 
-        if(Assert::isNotEmpty($enabled) && Modules::isEnabled(ModulesEnum::WEBSERVER)){
+        if($enabled && Modules::isEnabled(ModulesEnum::WEBSERVER)){
             /** @var ServerRunInterface $server */
             $server = InstanceFactory::createIfNotExists(WebServer::class);
             $server->run();
@@ -72,11 +75,22 @@ class Application
 
     private function startWebSocketServer(): void
     {
-        $enabled = $this->argvParser->get('websocketserver', false);
+        $enabled = $this->argvParser->has('websocketserver');
 
-        if(Assert::isNotEmpty($enabled) && Modules::isEnabled(ModulesEnum::WEBSERVER)){
+        if($enabled && Modules::isEnabled(ModulesEnum::WEBSERVER)){
             /** @var ServerRunInterface $server */
             $server = InstanceFactory::createIfNotExists(WebSocketServer::class);
+            $server->run();
+        }
+    }
+
+    private function startCompiler(): void
+    {
+        $enabled = $this->argvParser->has('compiler');
+
+        if($enabled){
+            /** @var ServerRunInterface $server */
+            $server = InstanceFactory::createIfNotExists(Compiler::class);
             $server->run();
         }
     }
