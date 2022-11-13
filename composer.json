@@ -2,7 +2,7 @@
   "name": "caiomarcatti12/core",
   "description": "",
   "type": "library",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "license": "MIT",
   "authors": [
     {
@@ -16,6 +16,7 @@
     }
   },
   "minimum-stability": "stable",
+  "prefer-stable": true,
   "require": {
 
   }
