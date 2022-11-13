@@ -2,7 +2,7 @@
   "name": "caiomarcatti12/core",
   "description": "",
   "type": "library",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "license": "MIT",
   "authors": [
     {
@@ -18,6 +18,6 @@
   "minimum-stability": "stable",
   "prefer-stable": true,
   "require": {
-
+    "phalcon/cli-options-parser": "^1.3"
   }
 }
