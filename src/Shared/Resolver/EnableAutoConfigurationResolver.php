@@ -8,11 +8,11 @@
 //use CaioMarcatti12\I18n\Translator;
 //use CaioMarcatti12\Event\EventLoader;
 //use CaioMarcatti12\Core\Validation\Assert;
-//use CaioMarcatti12\Cli\RouterResponseCLI;
+//use CaioMarcatti12\Core\Cli\RouterResponseCLI;
 //use CaioMarcatti12\I18n\TranslatorLoader;
 //use CaioMarcatti12\Core\Bean\Objects\BeanProxy;
 //use CaioMarcatti12\Webserver\Adapter\SwooleAdapter;
-//use CaioMarcatti12\Cli\Adapter\PhalconAdapter;
+//use CaioMarcatti12\Core\Cli\Adapter\PhalconAdapter;
 //use CaioMarcatti12\Logger\Adapter\NoLogAdapter;
 //use CaioMarcatti12\Security\Adapter\JwtAdapter;
 //use CaioMarcatti12\Logger\Adapter\MonologAdapter;
@@ -20,7 +20,7 @@
 //use CaioMarcatti12\Mailer\Adapter\PhpMailerAdapter;
 //use CaioMarcatti12\Captcha\Adapter\RecaptchaAdapter;
 //use CaioMarcatti12\Core\Bean\Annotation\AnnotationResolver;
-//use CaioMarcatti12\Cli\Interfaces\ArgvParserInterface;
+//use CaioMarcatti12\Core\Cli\Interfaces\ArgvParserInterface;
 //use CaioMarcatti12\Mailer\Adapter\MemoryMailerAdapter;
 //use CaioMarcatti12\Captcha\Interfaces\CaptchaInterface;
 //use CaioMarcatti12\Captcha\Adapter\CaptchaMemoryAdapter;
