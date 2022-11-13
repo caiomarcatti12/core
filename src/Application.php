@@ -6,6 +6,7 @@ use CaioMarcatti12\CacheManager\Annotation\EnableCache;
 use CaioMarcatti12\Cli\Adapter\PhalconAdapter;
 use CaioMarcatti12\Cli\Annotation\EnableCli;
 use CaioMarcatti12\Cli\Interfaces\ArgvParserInterface;
+use CaioMarcatti12\Command\CommandServer;
 use CaioMarcatti12\Compiler\Compiler;
 use CaioMarcatti12\Core\Bean\AliasForLoader;
 use CaioMarcatti12\Core\Bean\ResolverLoader;
@@ -49,6 +50,7 @@ class Application
         $this->startWebServer();
         $this->startWebSocketServer();
         $this->startCompiler();
+        $this->startCommand();
     }
 
     private function startQueueServer(): void
@@ -92,6 +94,18 @@ class Application
             /** @var ServerRunInterface $server */
             $server = InstanceFactory::createIfNotExists(Compiler::class);
             $server->run();
+        }
+    }
+
+    private function startCommand(): void
+    {
+        $enabled = $this->argvParser->has('command');
+        $command = $this->argvParser->get('command', '');
+
+        if($enabled && Assert::isNotEmpty($command)){
+            /** @var ServerRunInterface $server */
+            $server = InstanceFactory::createIfNotExists(CommandServer::class);
+            $server->run($command);
         }
     }
 }
