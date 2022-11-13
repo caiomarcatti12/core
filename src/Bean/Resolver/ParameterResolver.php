@@ -2,10 +2,10 @@
 
 namespace CaioMarcatti12\Core\Bean\Resolver;
 
-use CaioMarcatti12\Core\Factory\InstanceFactory;
 use CaioMarcatti12\Core\Bean\InstanceMaker;
 use CaioMarcatti12\Core\Bean\Interfaces\ParameterResolverInterface;
 use CaioMarcatti12\Core\Bean\Objects\BeanResolver;
+use CaioMarcatti12\Core\Factory\InstanceFactory;
 use CaioMarcatti12\Core\Validation\Assert;
 
 class ParameterResolver implements ParameterResolverInterface

@@ -6,7 +6,6 @@ use Attribute;
 use CaioMarcatti12\Core\Cli\Adapter\PhalconAdapter;
 use CaioMarcatti12\Core\Modules\Modules;
 use CaioMarcatti12\Core\Modules\ModulesEnum;
-use CaioMarcatti12\QueueManager\Adapter\RabbitMQAdapter;
 
 #[Attribute(Attribute::TARGET_CLASS)]
 class EnableCli

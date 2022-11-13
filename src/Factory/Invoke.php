@@ -2,21 +2,16 @@
 
 namespace CaioMarcatti12\Core\Factory;
 
-use CaioMarcatti12\Core\Bean\Objects\BeanProxy;
 use CaioMarcatti12\Core\Bean\Resolver\ClassResolver;
 use CaioMarcatti12\Core\Bean\Resolver\MethodResolver;
 use CaioMarcatti12\Core\Bean\Resolver\ParameterResolver;
-use ReflectionClass;
-use ReflectionMethod;
-use CaioMarcatti12\Data\Request\Objects\Body;
 use CaioMarcatti12\Core\Validation\Assert;
-use MongoDB\BSON\ObjectId;
-use CaioMarcatti12\Core\Bean\Objects\BeanCache;
-use CaioMarcatti12\Data\Request\Objects\Header;
+use CaioMarcatti12\Data\Request\Objects\Body;
 use CaioMarcatti12\Router\Exception\ResponseTypeException;
 use CaioMarcatti12\Router\Interfaces\RouterResponseInterface;
-use CaioMarcatti12\Webserver\Annotation\Presenter;
-use CaioMarcatti12\Webserver\RouterResponseWeb;
+use MongoDB\BSON\ObjectId;
+use ReflectionClass;
+use ReflectionMethod;
 
 class Invoke
 {

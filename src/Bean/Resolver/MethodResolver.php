@@ -2,11 +2,11 @@
 
 namespace CaioMarcatti12\Core\Bean\Resolver;
 
-use CaioMarcatti12\Core\Factory\InstanceFactory;
-use ReflectionMethod;
 use CaioMarcatti12\Core\Bean\Interfaces\MethodResolverInterface;
 use CaioMarcatti12\Core\Bean\Objects\BeanResolver;
+use CaioMarcatti12\Core\Factory\InstanceFactory;
 use CaioMarcatti12\Core\Validation\Assert;
+use ReflectionMethod;
 
 class MethodResolver implements MethodResolverInterface
 {

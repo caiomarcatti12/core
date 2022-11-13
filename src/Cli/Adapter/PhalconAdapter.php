@@ -2,8 +2,8 @@
 
 namespace CaioMarcatti12\Core\Cli\Adapter;
 
-use Phalcon\Cop\Parser;
 use CaioMarcatti12\Core\Cli\Interfaces\ArgvParserInterface;
+use Phalcon\Cop\Parser;
 
 class PhalconAdapter implements ArgvParserInterface
 {

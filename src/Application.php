@@ -2,17 +2,13 @@
 
 namespace CaioMarcatti12\Core;
 
-use CaioMarcatti12\CacheManager\Annotation\EnableCache;
-use CaioMarcatti12\Core\Cli\Adapter\PhalconAdapter;
-use CaioMarcatti12\Core\Cli\Annotation\EnableCli;
-use CaioMarcatti12\Core\Cli\Interfaces\ArgvParserInterface;
 use CaioMarcatti12\Command\CommandServer;
-use CaioMarcatti12\Core\Compiler\Compiler;
 use CaioMarcatti12\Core\Bean\AliasForLoader;
 use CaioMarcatti12\Core\Bean\ResolverLoader;
-use CaioMarcatti12\Core\Factory\Annotation\Autowired;
+use CaioMarcatti12\Core\Cli\Adapter\PhalconAdapter;
+use CaioMarcatti12\Core\Cli\Interfaces\ArgvParserInterface;
+use CaioMarcatti12\Core\Compiler\Compiler;
 use CaioMarcatti12\Core\Factory\InstanceFactory;
-use CaioMarcatti12\Core\Launcher\Annotation\Launcher;
 use CaioMarcatti12\Core\Launcher\Enum\LauncherPriorityEnum;
 use CaioMarcatti12\Core\Launcher\LauncherLoader;
 use CaioMarcatti12\Core\Launcher\LauncherRun;

@@ -2,11 +2,11 @@
 
 namespace CaioMarcatti12\Core\Cli\Resolver;
 
-use CaioMarcatti12\Core\Cli\Annotation\EnableCli;
-use CaioMarcatti12\Core\Cli\Interfaces\ArgvParserInterface;
 use CaioMarcatti12\Core\Bean\Annotation\AnnotationResolver;
 use CaioMarcatti12\Core\Bean\Interfaces\ClassResolverInterface;
 use CaioMarcatti12\Core\Bean\Objects\BeanProxy;
+use CaioMarcatti12\Core\Cli\Annotation\EnableCli;
+use CaioMarcatti12\Core\Cli\Interfaces\ArgvParserInterface;
 use ReflectionClass;
 
 #[AnnotationResolver(EnableCli::class)]

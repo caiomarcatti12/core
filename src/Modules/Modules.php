@@ -2,10 +2,6 @@
 
 namespace CaioMarcatti12\Core\Modules;
 
-use CaioMarcatti12\Core\Bean\AliasForLoader;
-use CaioMarcatti12\Core\Bean\ResolverLoader;
-use CaioMarcatti12\Core\Factory\InstanceFactory;
-
 class Modules
 {
     private static array $modules = [];
