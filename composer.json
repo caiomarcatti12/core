@@ -15,10 +15,10 @@
       "CaioMarcatti12\\Core\\" :  "src/"
     }
   },
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "require": {
-    "caiomarcatti12/cli": "dev-master",
-    "caiomarcatti12/compiler": "dev-master"
+    "caiomarcatti12/cli": "1.0.0",
+    "caiomarcatti12/compiler": "1.0.0"
 
   }
 }
