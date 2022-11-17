@@ -75,7 +75,7 @@ class Application
     {
         $enabled = $this->argvParser->has('websocketserver');
 
-        if($enabled && Modules::isEnabled(ModulesEnum::WEBSERVER)){
+        if($enabled && Modules::isEnabled(ModulesEnum::WEBSOCKETSERVER)){
             /** @var ServerRunInterface $server */
             $server = InstanceFactory::createIfNotExists(WebSocketServer::class);
             $server->run();
